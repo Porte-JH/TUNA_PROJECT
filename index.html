@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<title>메인</title>
-		<style>
-			.top{
-				
-				height: 25vh;
-				background-color: skyblue;
-				position:relative;
-			}
-			.nav{
-				height: 75vh;
-				width: 15vw;
-				background-color: skyblue;
-				position:relative;
-			}
-			.main{
-				height: 10vh;
-				width: 70vw;
-				background-color: skyblue;
-				position:relative;
-			}
-		</style>
-	</head>
-	<body>
-		<div class = "top">
-			<h1><a href="index.html"> *위병소 연습 사이트* </a></h1>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TUNA_PROJECT</title>
+	<link rel="stylesheet" href="css/reset.css" type = "text/css">
+	<link rel="stylesheet" href="css/style.css" type = "text/css">
+	<script src = "js/jquery.1.12.4.js"
+		type ="text/javascript"
+	></script>
+	<script src = 	"plugins/bxslider/js/jquery.bxslider.js"
+type="text/javascript"> </script>
+	<link href="fontawesome-free-5.15.0-web/fontawesome-free-5.15.0-web/css/all.css" rel="stylesheet">
+	<script>
+		$(document).ready(function(){
+      $('.slide').bxSlider({
+		  controls:false,
+		  pager:false,
+		  auto:true
+	  });
+    });
+	</script>
+</head>
+<body>
+	<div class = "overlay"></div>
+		<div class = "slide">
+			<div class = "bg_01"></div>
+			<div class = "bg_02"></div>
+			<div class = "bg_03"></div>
 		</div>
-		<div class="middle">
-		<div class = "nav">
-			<ul>
-				<li><a href="Commander.html">간부출입통제</a></li>
-				<li><a href="Otherunits.html">타부대출입통제</a></li>
-				<li><a href="Citizen.html">외래인출입통제</a></li>
+	<div class = "content">
+		<p class = "c_name"> Door, Ji-Hyeon</p>
+		<p class = "c_job"> I'm Developer & web programmer</p>
+		<div class = "c_icons">
+			<ul class = "c_lists">
+				<li>
+					<a href="#">
+					<i class="fas fa-door-open">					</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="fas fa-door-closed">					</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="fab fa-github">						</i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<i class="fas fa-exclamation-circle"></i>
+					</a>
+				</li>
 			</ul>
 		</div>
-		<div class = "main">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti, iusto voluptatem aspernatur consequuntur, distinctio asperiores pariatur itaque possimus id, totam quaerat labore magnam similique officia minus placeat sunt facilis!
-			<p>
-			
-		</div>
-			</div>
-	</body>
+	</div>
+</body>
 </html>
