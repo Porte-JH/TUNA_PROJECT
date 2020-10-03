@@ -2,3 +2,40 @@
 	font-weight: bold;
 	font-size: 30px;
 }
+body {
+	margin: 0px;
+}
+.top{
+	border-bottom: 1px solid black;
+	text-align: center;
+	margin: 0px;
+}
+
+.nav{
+	
+	margin-right: 0;
+}
+.nav > ul > li > a{
+	color:inherit;
+	text-decoration-line: none;
+	color: skyblue;
+	
+}
+.nav > ul {
+	margin: 0px;
+	padding-top: 5px;
+}
+
+@media(min-width:800px){
+	.middle{
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	}
+	.nav{
+		border-right: 1px solid black;
+	}
+}
+
+.main {
+	margin: 10px;
+}
