@@ -1,0 +1,19 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.head{
+	background-color: skyblue;
+	
+}
+.nav{
+	background-color: black;
+}
+.main{
+	background-color: pink;
+}
+.foot{
+	background-color: red;
+}

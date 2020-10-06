@@ -34,8 +34,32 @@ body {
 	.nav{
 		border-right: 1px solid black;
 	}
+	.m_menu{
+		grid-template-columns: 
+		repeat(4, 1fr);
+	}
 }
 
 .main {
 	margin: 10px;
+}
+.m_title{
+	
+}
+.m_menu{
+	background-color: gray;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 
+		repeat(6, 1fr);
+}
+.m_menu > input {
+	margin: 5px;
+	
+}
+.btn{
+	grid-row-start: 5;
+
+	
+	
 }
