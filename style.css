@@ -1,3 +1,9 @@
+.top > h1 > a{
+	color: inherit;
+	text-decoration-line:none;
+}
+
+
 .title {
 	font-weight: bold;
 	font-size: 30px;
@@ -8,11 +14,15 @@ body {
 .top{
 	border-bottom: 1px solid black;
 	text-align: center;
-	margin: 0px;
+	padding: 50px;
+	background-color: skyblue;
+}
+
+.toggle{
+
 }
 
 .nav{
-	
 	margin-right: 0;
 }
 .nav > ul > li > a{
@@ -26,7 +36,20 @@ body {
 	padding-top: 5px;
 }
 
-@media(min-width:800px){
+.m_menu{
+	background-color: gray;
+	display: grid;
+	grid-template-columns:
+		1fr 1fr 1fr 1fr ;
+	grid-template-rows:
+		50px 50px 50px;
+	height: 150px;
+}
+.btn{
+	grid-column: 3 / 5;
+}
+
+@media(min-width:900px){
 	.middle{
 	display: grid;
 	grid-template-columns: 200px 1fr;
@@ -35,31 +58,29 @@ body {
 		border-right: 1px solid black;
 	}
 	.m_menu{
-		grid-template-columns: 
-		repeat(4, 1fr);
-	}
+	background-color: gray;
+	display: grid;
+	grid-template-columns:
+		1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows:
+		50px 50px;
+	height: 100px;
+}
+	.btn{
+	grid-column: 5 / 7;
+}
 }
 
 .main {
 	margin: 10px;
 }
+
 .m_title{
 	
 }
-.m_menu{
-	background-color: gray;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: 
-		repeat(6, 1fr);
-}
+
 .m_menu > input {
 	margin: 5px;
 	
 }
-.btn{
-	grid-row-start: 5;
 
-	
-	
-}
